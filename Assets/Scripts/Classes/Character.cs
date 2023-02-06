@@ -17,4 +17,14 @@ public class Character
     public string FullName => $"{FirstName} {LastName}";
     [SerializeField]
     public CharacterClass CharacterClass;
+    [SerializeField]
+    public CharacterStats stats;
+
+    [System.Serializable]
+    public struct CharacterStats
+    {
+        [SerializeField]
+        public int BaseStrength;
+    }
 }
+
