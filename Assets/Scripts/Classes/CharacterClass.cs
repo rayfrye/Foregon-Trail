@@ -12,4 +12,5 @@ public class CharacterClass
 
     [SerializeField]
     public string Name;
+    
 }
