@@ -11,28 +11,16 @@ public class Character
     }
 
     [SerializeField]
-    public Profile CurrentProfile;
+    public Profile Profile;
     [SerializeField]
     public List<Trait> TempTraits;
     [SerializeField]
-    public Stats BaseStats;
+    public Stats Stats;
     [SerializeField]
     public int Experience;
     [SerializeField]
     public List<Action> Actions;
     [SerializeField]
     public EquipmentGroup Equipped;
-    
-    [System.Serializable]
-    public class Profile
-    {
-        [SerializeField]
-        public string FirstName;
-        [SerializeField]
-        public string LastName;
-        [SerializeField]
-        public string Description;
-        public string FullName => $"{FirstName} {LastName}";
-    }
 }
 

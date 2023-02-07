@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Trait
+public class Profile
 {
     [SerializeField]
-    public string Name;
+    public string FirstName;
     [SerializeField]
-    public Stats Stats;
+    public string LastName;
     [SerializeField]
-    public int Duration;
-    [SerializeField]
-    public int DateReceived;
+    public string Description;
+    public string FullName => $"{FirstName} {LastName}";
 }

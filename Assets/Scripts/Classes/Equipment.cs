@@ -9,6 +9,6 @@ public class Equipment : Item
     public EquipmentSlot EquipmentSlot;
 
     [SerializeField]
-    public Stats BaseStats;
+    public Stats Stats;
     
 }

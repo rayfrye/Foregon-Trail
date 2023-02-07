@@ -8,8 +8,6 @@ public class Data : MonoBehaviour
     public List<PlayableCharacter> PlayableCharacters;
     [SerializeField]
     public List<NPC> NPCs;
-    [SerializeField]
-    public List<Equipment> Equipments;
     
     // Start is called before the first frame update
     void Start()
