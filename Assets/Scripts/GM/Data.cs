@@ -5,9 +5,11 @@ using UnityEngine;
 public class Data : MonoBehaviour
 {
     [SerializeField]
-    public List<Character> Characters;
+    public List<PlayableCharacter> PlayableCharacters;
     [SerializeField]
-    public List<CharacterClass> CharacterClasses;
+    public List<NPC> NPCs;
+    [SerializeField]
+    public List<Equipment> Equipments;
     
     // Start is called before the first frame update
     void Start()

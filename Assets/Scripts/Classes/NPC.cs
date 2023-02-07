@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class CharacterClass
+public class NPC : Character
 {
-    public CharacterClass()
+    public NPC()
     {
 
     }
-
-    [SerializeField]
-    public string Name;
     
 }
+

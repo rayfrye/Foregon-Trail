@@ -420,12 +420,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fc99125fd19432987f719d9b8ca108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Characters:
+  PlayableCharacters:
+  - CurrentProfile:
+      FirstName: 
+      LastName: 
+      Description: 
+    TempTraits:
+    - Name: 
+      Stats:
+        Strength: 0
+        Dexterity: 0
+        Constitution: 0
+        Intelligence: 0
+        Wisdom: 0
+        Charisma: 0
+      Duration: 0
+    BaseStats:
+      Strength: 0
+      Dexterity: 0
+      Constitution: 0
+      Intelligence: 0
+      Wisdom: 0
+      Charisma: 0
+    Experience: 0
+    Actions:
+    - Name: 
+      Traits:
+      - Name: 
+        Stats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+        Duration: 0
+      StatType: 0
+    Equipped:
+      Head:
+        Name: 
+        BaseValue: 
+        EquipmentSlot: 0
+        BaseStats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+      Body:
+        Name: 
+        BaseValue: 
+        EquipmentSlot: 0
+        BaseStats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+      Hands:
+        Name: 
+        BaseValue: 
+        EquipmentSlot: 0
+        BaseStats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+      Legs:
+        Name: 
+        BaseValue: 
+        EquipmentSlot: 0
+        BaseStats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+      Feet:
+        Name: 
+        BaseValue: 
+        EquipmentSlot: 0
+        BaseStats:
+          Strength: 0
+          Dexterity: 0
+          Constitution: 0
+          Intelligence: 0
+          Wisdom: 0
+          Charisma: 0
+    IsUnlocked: 0
+    CostToHire: 0
+  NPCs: []
+  Equipments:
   - Name: 
-    CharacterClass:
-      Name: 
-  CharacterClasses:
-  - Name: 
+    BaseValue: 
+    EquipmentSlot: 0
+    BaseStats:
+      Strength: 0
+      Dexterity: 0
+      Constitution: 0
+      Intelligence: 0
+      Wisdom: 0
+      Charisma: 0
 --- !u!1 &2100569262
 GameObject:
   m_ObjectHideFlags: 0
