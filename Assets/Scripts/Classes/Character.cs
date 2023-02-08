@@ -5,11 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Character
 {
-    public Character()
-    {
-
-    }
-
+    [SerializeField]
+    public int CurrentHealth;
+    [SerializeField]
+    public int MaxHealth;
     [SerializeField]
     public Profile Profile;
     [SerializeField]

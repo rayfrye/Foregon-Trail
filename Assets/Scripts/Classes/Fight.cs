@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Action
+public class Fight : Event
 {
     [SerializeField]
-    public string Name;
+    public int CurrentHealth;
     [SerializeField]
-    public List<Trait> InflictsTraits;
-    [SerializeField]
-    public int TargetRoll;
+    public int MaxHealth;
 }
-

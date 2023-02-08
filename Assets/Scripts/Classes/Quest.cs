@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct EquipmentGroup
+public class Quest
 {
     [SerializeField]
-    public Equipment Head;
+    public string Name;
     [SerializeField]
-    public Equipment Body;
+    public string Description;
     [SerializeField]
-    public Equipment Hands;
+    public bool IsUnlocked;
     [SerializeField]
-    public Equipment Legs;
+    public List<Event> MinorEvents;
     [SerializeField]
-    public Equipment Feet;
+    public List<Event> MajorEvents;
     [SerializeField]
-    public Equipment Weapon;
+    public Event FinalEvent;
 }

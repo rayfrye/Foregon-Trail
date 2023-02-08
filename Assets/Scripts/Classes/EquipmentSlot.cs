@@ -8,5 +8,6 @@ public enum EquipmentSlot
         Body,
         Hands,
         Legs,
-        Feet
+        Feet,
+        Weapon
     }

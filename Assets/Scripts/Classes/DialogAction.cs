@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayableCharacter : Character
+public class DialogAction
 {
     [SerializeField]
-    public bool IsUnlocked;
+    public StatType StatType;
     [SerializeField]
-    public bool IsFainted;
+    public int StatTarget;
     [SerializeField]
-    public int CostToHire;
-    
+    public string Text;
 }
-

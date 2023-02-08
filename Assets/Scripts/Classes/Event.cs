@@ -3,24 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class TempStats
+public class Event
 {
     [SerializeField]
     public string Name;
     [SerializeField]
     public string Description;
     [SerializeField]
-    public int Duration;
+    public List<string> Text;
     [SerializeField]
-    public int Strength;
+    public int ExperienceReward;
     [SerializeField]
-    public int Dexterity;
+    public int GoldReward;
     [SerializeField]
-    public int Constitution;
-    [SerializeField]
-    public int Intelligence;
-    [SerializeField]
-    public int Wisdom;
-    [SerializeField]
-    public int Charisma;
+    public List<Item> ItemReward;
 }
