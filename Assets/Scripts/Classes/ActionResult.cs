@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Action
+public class ActionResult
 {
     [SerializeField]
     public string Name;
     [SerializeField]
-    public List<ActionResult> ActionResults;
+    public int InflictsHealth;
+    [SerializeField]
+    public List<Trait> InflictsTraits;
+    [SerializeField]
+    public int TargetRoll;
 }
 

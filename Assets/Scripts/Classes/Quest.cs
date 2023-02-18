@@ -12,9 +12,9 @@ public class Quest
     [SerializeField]
     public bool IsUnlocked;
     [SerializeField]
-    public List<Event> MinorEvents;
+    public List<QuestEvent> MinorQuestEvents;
     [SerializeField]
-    public List<Event> MajorEvents;
+    public List<QuestEvent> MajorQuestEvents;
     [SerializeField]
-    public Event FinalEvent;
+    public QuestEvent FinalQuestEvent;
 }

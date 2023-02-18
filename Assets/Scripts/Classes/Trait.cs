@@ -8,9 +8,7 @@ public class Trait
     [SerializeField]
     public string Name;
     [SerializeField]
+    public bool IsPositive;
+    [SerializeField]
     public Stats Stats;
-    [SerializeField]
-    public int Duration;
-    [SerializeField]
-    public int DateReceived;
 }
