@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Quest
+public class EventNodeActionResult
 {
     [SerializeField]
-    public string Name;
+    public EventNodeActionResultType EventNodeActionResultType;
     [SerializeField]
-    public string Description;
+    public int HPImpact;
     [SerializeField]
-    public bool IsUnlocked;
+    public int GoldImpact;
     [SerializeField]
-    public bool IsCompleted;
+    public int StatImpact;
     [SerializeField]
-    public QuestType QuestType;
+    public StatType StatType;
     [SerializeField]
     public EventNode EventNode;
 }

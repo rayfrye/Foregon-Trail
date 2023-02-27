@@ -12,9 +12,9 @@ public class DebugScene : MonoBehaviour
     [SerializeField]
     public Quest CurrentQuest;
     [SerializeField]
-    public QuestEvent CurrentQuestEvent;
+    public EventNode CurrentEventNode;
     [SerializeField]
-    public List<QuestEvent> QuestEvents;
+    public List<EventNode> EventNodes;
     [SerializeField]
     public List<Quest> Quests;
     [SerializeField]
@@ -26,7 +26,7 @@ public class DebugScene : MonoBehaviour
     [SerializeField]
     public GameObject EventOptions;
     [SerializeField]
-    public int TextIndex;
+    public int TextIndex = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -44,59 +44,31 @@ public class DebugScene : MonoBehaviour
     {
         SelectedPartyMember = Party[0];
         CurrentQuest = Quests[0];
-        CurrentQuestEvent = QuestEvents[0];
-        EventStartNotifText.text = CurrentQuestEvent.Description;
+        CurrentEventNode = EventNodes[0];
+        EventStartNotifText.text = CurrentEventNode.Text[TextIndex];
         EventStartNotif.SetActive(true);
         EventOptions.SetActive(false);
     }
 
     public void AdvanceEvent()
     {
-        /*
-        switch(CurrentQuestEvent.QuestEventState)
+        if(TextIndex < CurrentEventNode.Text.Count - 1)
         {
-            case QuestEventState.Starting:
-            {
-                CurrentQuestEvent.QuestEventState = QuestEventState.Intro;
-                EventStartNotifText.text = CurrentQuestEvent.IntroText[TextIndex];
-                TextIndex++;
-                break;
-            }
-            case QuestEventState.Intro:
-            {
-                if(CurrentQuestEvent.IntroText.Count > 0)
-                {
-                    if(TextIndex < CurrentQuestEvent.IntroText.Count)
-                    {
-                        EventStartNotifText.text = CurrentQuestEvent.IntroText[TextIndex];
-                        TextIndex++;
-                    }
-                    else
-                    {
-                        EventStartNotifText.text = "";
-                        EventStartNotif.SetActive(false);
-                        EventOptions.SetActive(true);
-                        CurrentQuestEvent.QuestEventState = QuestEventState.During;
-                    }
-                }
-
-                break;
-            }
-            case QuestEventState.During:
-            {
-
-                break;
-            }
-            case QuestEventState.Outro:
-            {
-                break;
-            }
-            default:
-            {
-                break;
-            }
+            TextIndex++;
+            EventStartNotifText.text = CurrentEventNode.Text[TextIndex];
         }
-        */
+        else
+        {
+            foreach(var option in CurrentEventNode.Actions)
+            {
+                Debug.Log($"{option.Label}");
+            }
+
+            var selectedGoCharacter = SelectedPartyMember.GetComponent<GOCharacter>();
+
+            var diceRoll = Random.Range(1,12) + selectedGoCharacter.Character.GetStatValue(CurrentEventNode.Actions[0].StatType);
+            Debug.Log(diceRoll);
+        }
     }
 
     public void TrySolution(string StatType)
@@ -107,8 +79,6 @@ public class DebugScene : MonoBehaviour
         {
             case "BEATDOWN":
             {
-                var statModifier = selectedGoCharacter.Character.Stats.Strength - CurrentQuestEvent.Stats.Strength;
-                Debug.Log(statModifier);
 
                 break;
             }

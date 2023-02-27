@@ -450,84 +450,238 @@ MonoBehaviour:
     Description: 
     IsUnlocked: 0
     IsCompleted: 0
-    MinorQuestEvents: []
-    MajorQuestEvents: []
-    FinalQuestEvent:
+    QuestType: 0
+    EventNode:
       Name: 
-      QuestEventType: 0
-      QuestEventState: 0
-      Description: 
-      IntroText: []
-      OutroText: []
-      Stats:
-        Strength: 0
-        Dexterity: 0
-        Charisma: 0
-        Intelligence: 0
-        Wisdom: 0
-        Constitution: 0
-      ExperienceReward: 0
-      GoldReward: 0
-      ItemReward: []
-      CurrentHealth: 0
-      MaxHealth: 0
-      DialogActions: []
-  CurrentQuestEvent:
+      Text: []
+      Actions: []
+  CurrentEventNode:
     Name: 
-    QuestEventType: 0
-    QuestEventState: 0
-    Description: 
-    IntroText: []
-    OutroText: []
-    Stats:
-      Strength: 0
-      Dexterity: 0
-      Charisma: 0
-      Intelligence: 0
-      Wisdom: 0
-      Constitution: 0
-    ExperienceReward: 0
-    GoldReward: 0
-    ItemReward: []
-    CurrentHealth: 0
-    MaxHealth: 0
-    DialogActions: []
+    Text: []
+    Actions: []
+  EventNodes:
+  - Name: A burning wagon
+    Text:
+    - You see a burning wagon in the road ahead.
+    - There doesn't seem to be anyone around.
+    Actions:
+    - Label: Investigate the wagon
+      SubLabel: (+Int)
+      StatType: 2
+      FullSuccess:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: Get Gold
+          Text:
+          - You see some gold in the back!
+          - Take it?
+          Actions:
+          - Label: Take the gold
+            SubLabel: (+Dex)
+            StatType: 0
+            FullSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            PartialSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            CompleteFailure:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+          - Label: Leave it and move on
+            SubLabel: 
+            StatType: 0
+            FullSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            PartialSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            CompleteFailure:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+      PartialSuccess:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: 
+          Text: []
+          Actions: []
+      CompleteFailure:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: 
+          Text: []
+          Actions: []
+    - Label: Ignore it and move on
+      SubLabel: 
+      StatType: 2
+      FullSuccess:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: Get Gold
+          Text:
+          - You see some gold in the back!
+          - Take it?
+          Actions:
+          - Label: Take the gold
+            SubLabel: (+Dex)
+            StatType: 0
+            FullSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            PartialSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            CompleteFailure:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+          - Label: Leave it and move on
+            SubLabel: 
+            StatType: 0
+            FullSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            PartialSuccess:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+            CompleteFailure:
+              EventNodeActionResultType: 0
+              HPImpact: 0
+              GoldImpact: 0
+              StatImpact: 0
+              StatType: 0
+              EventNode:
+                Name: 
+                Text: []
+                Actions: []
+      PartialSuccess:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: 
+          Text: []
+          Actions: []
+      CompleteFailure:
+        EventNodeActionResultType: 0
+        HPImpact: 0
+        GoldImpact: 0
+        StatImpact: 0
+        StatType: 0
+        EventNode:
+          Name: 
+          Text: []
+          Actions: []
   Quests:
   - Name: Starting Quest
     Description: 
     IsUnlocked: 0
     IsCompleted: 0
-    MinorQuestEvents: []
-    MajorQuestEvents: []
-    FinalQuestEvent:
-      Name: A Big Rat
-      QuestEventType: 0
-      QuestEventState: 0
-      Description: There's a big rat to fight
-      IntroText:
-      - You should fight it.
-      - It's a pretty big rat.
-      - Good luck!
-      OutroText:
-      - You beat the big rat!
-      Stats:
-        Strength: 0
-        Dexterity: 0
-        Charisma: 0
-        Intelligence: 0
-        Wisdom: 0
-        Constitution: 0
-      ExperienceReward: 10
-      GoldReward: 10
-      ItemReward: []
-      CurrentHealth: 10
-      MaxHealth: 10
-      DialogActions: []
+    QuestType: 0
+    EventNode:
+      Name: 
+      Text: []
+      Actions: []
   PlayerGold: 0
   EventStartNotif: {fileID: 774321007}
   EventStartNotifText: {fileID: 1511831234}
   EventOptions: {fileID: 8423827909320000881}
-  CurrentIntroTextIndex: 0
+  TextIndex: 0
 --- !u!1001 &1737177226357878721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,6 +882,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3703821563305014638, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703821563305014638, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703821563305014638, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 3703821564710596800, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
       propertyPath: m_Name
       value: EventOptions
@@ -839,6 +1005,18 @@ PrefabInstance:
     - target: {fileID: 4158546055020311006, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158546055020311006, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158546055020311006, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -78.741
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158546055020311006, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.493759
       objectReference: {fileID: 0}
     - target: {fileID: 4393143864782863089, guid: abca991e5c4eb4e528118bedde2e6d22, type: 3}
       propertyPath: m_AnchorMax.y
