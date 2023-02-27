@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum QuestEventState
+public enum QuestType
 {
-    Starting,
-    Intro,
-    During,
-    Outro
+    Salvage,
+    Combat
 }

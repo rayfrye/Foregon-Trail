@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GOCharacter : MonoBehaviour
+public class QuestEventNode
 {
     [SerializeField]
-    public Character Character;
+    public List<string> Text;
     [SerializeField]
-    public GameObject GM;
+    public List<QuestEventNodeAction> Actions;
 }

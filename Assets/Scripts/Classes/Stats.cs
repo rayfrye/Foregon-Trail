@@ -10,11 +10,11 @@ public class Stats
     [SerializeField]
     public int Dexterity;
     [SerializeField]
-    public int Constitution;
+    public int Charisma;
     [SerializeField]
     public int Intelligence;
     [SerializeField]
     public int Wisdom;
     [SerializeField]
-    public int Charisma;
+    public int Constitution;
 }

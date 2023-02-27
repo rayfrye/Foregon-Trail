@@ -5,9 +5,9 @@ using UnityEngine;
 public enum StatType
 {
     Strength,
-    Wisdom,
+    Dexterity,
     Intelligence,
+    Wisdom,
     Constitution,
-    Charisma,
-    Dexterity
+    Charisma
 }

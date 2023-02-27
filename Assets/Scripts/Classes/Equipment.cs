@@ -6,9 +6,6 @@ using UnityEngine;
 public class Equipment : Item
 {
     [SerializeField]
-    public EquipmentSlot EquipmentSlot;
-
-    [SerializeField]
     public Stats Stats;
     
 }

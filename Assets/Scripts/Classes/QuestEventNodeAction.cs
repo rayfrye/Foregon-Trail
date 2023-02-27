@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Action
+public class QuestEventNodeAction
 {
     [SerializeField]
-    public string Name;
+    public string Label;
     [SerializeField]
-    public List<ActionResult> ActionResults;
+    public StatType StatModifier;
 }
-

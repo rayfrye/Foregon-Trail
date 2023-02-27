@@ -12,14 +12,12 @@ public class Character
     [SerializeField]
     public Profile Profile;
     [SerializeField]
-    public List<Trait> TempTraits;
-    [SerializeField]
     public Stats Stats;
+    [SerializeField]
+    public int Level;
     [SerializeField]
     public int Experience;
     [SerializeField]
-    public List<Action> Actions;
-    [SerializeField]
-    public EquipmentGroup Equipped;
+    public Equipment[] Equipment = new Equipment[6];
 }
 

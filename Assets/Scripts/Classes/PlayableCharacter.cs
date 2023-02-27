@@ -7,10 +7,5 @@ public class PlayableCharacter : Character
 {
     [SerializeField]
     public bool IsUnlocked;
-    [SerializeField]
-    public bool IsFainted;
-    [SerializeField]
-    public int CostToHire;
-    
 }
 
