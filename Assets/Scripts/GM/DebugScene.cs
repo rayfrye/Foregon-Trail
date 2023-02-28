@@ -70,22 +70,4 @@ public class DebugScene : MonoBehaviour
             Debug.Log(diceRoll);
         }
     }
-
-    public void TrySolution(string StatType)
-    {
-        var selectedGoCharacter = SelectedPartyMember.GetComponent<GOCharacter>();
-
-        switch(StatType.ToUpper())
-        {
-            case "BEATDOWN":
-            {
-
-                break;
-            }
-            default:
-            {
-                break;
-            }
-        }
-    }
 }
